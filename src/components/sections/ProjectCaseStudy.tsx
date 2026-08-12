@@ -103,6 +103,32 @@ export function ProjectCaseStudy({ project, index }: { project: Project; index: 
               </div>
             </Reveal>
           )}
+
+          {project.id === "terranovainfra" && project.secondaryImage && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-60px" }}
+              transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+              className="mt-9"
+            >
+              <p className="mb-3 font-mono text-[11px] uppercase tracking-[0.25em] text-paper-dim">
+                Flagship feature — live on the site
+              </p>
+              <div className="overflow-hidden rounded-2xl border border-border-strong">
+                <div className="relative aspect-[1873/870] w-full bg-ink">
+                  <Image
+                    src={project.secondaryImage.src}
+                    alt={project.secondaryImage.caption}
+                    fill
+                    sizes="(min-width: 1024px) 40vw, 100vw"
+                    className="object-cover object-top"
+                  />
+                </div>
+              </div>
+              <p className="mt-2 text-xs text-paper-dim/70">{project.secondaryImage.caption}</p>
+            </motion.div>
+          )}
         </div>
 
         {/* Right: narrative + contributions + metrics */}
@@ -183,36 +209,12 @@ export function ProjectCaseStudy({ project, index }: { project: Project; index: 
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-              className="mt-9 space-y-6"
+              className="mt-9"
             >
-              <div>
-                <p className="mb-3 font-mono text-[11px] uppercase tracking-[0.25em] text-paper-dim">
-                  Flagship feature — live on the site
-                </p>
-                {project.secondaryImage && (
-                  <>
-                    <div className="overflow-hidden rounded-2xl border border-border-strong">
-                      <div className="relative aspect-[1873/870] w-full bg-ink">
-                        <Image
-                          src={project.secondaryImage.src}
-                          alt={project.secondaryImage.caption}
-                          fill
-                          sizes="(min-width: 1024px) 60vw, 100vw"
-                          className="object-cover object-top"
-                        />
-                      </div>
-                    </div>
-                    <p className="mt-2 text-xs text-paper-dim/70">{project.secondaryImage.caption}</p>
-                  </>
-                )}
-              </div>
-
-              <div>
-                <p className="mb-3 font-mono text-[11px] uppercase tracking-[0.25em] text-paper-dim">
-                  Try it yourself — interactive recreation
-                </p>
-                <PlotMapDemo />
-              </div>
+              <p className="mb-3 font-mono text-[11px] uppercase tracking-[0.25em] text-paper-dim">
+                Try it yourself — interactive recreation
+              </p>
+              <PlotMapDemo />
             </motion.div>
           )}
 

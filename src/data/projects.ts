@@ -52,6 +52,7 @@ export const PROJECTS: Project[] = [
     stack: [
       "Go", "Gin", "PostgreSQL (Supabase)", "Next.js 16", "React 19",
       "Redux Toolkit + Redux-Saga", "Tailwind CSS 4", "Monaco Editor", "Docker",
+      "Google Cloud Run", "GitHub", "Postman", "VS Code", "Production Release Management",
     ],
     integrations: [
       { name: "Zoom (Server-to-Server OAuth)", purpose: "Live class creation, joining & recording webhooks" },
@@ -90,7 +91,10 @@ export const PROJECTS: Project[] = [
       "MeraSunaar lets users convert everyday spare change into 24-karat digital gold — buying, selling, gifting, donating, and automating recurring purchases from a mobile app and web platform built for a mainstream, non-technical audience.",
       "I worked across the full stack: the customer-facing web app, the production React Native mobile app, and the integration layer connecting to gold custody, payments, and identity verification providers.",
     ],
-    stack: ["React Native", "Next.js", "React.js", "Tailwind CSS", "Go", "REST APIs", "Git / GitLab CI/CD", "Linux"],
+    stack: [
+      "React Native", "Next.js", "React.js", "Tailwind CSS", "Go", "REST APIs", "AWS", "GitLab", "Docker",
+      "Figma", "Postman", "VS Code", "Production Release Management", "Linux",
+    ],
     integrations: [
       { name: "Augmont Gold", purpose: "Secure digital gold custody & infrastructure" },
       { name: "Cashfree", purpose: "Payment processing" },
@@ -103,7 +107,7 @@ export const PROJECTS: Project[] = [
       "Integrated Augmont Gold for digital gold services, Cashfree for payments, and Surepass for KYC.",
       "Worked across frontend, mobile, backend integration, and production workflows alongside the backend team.",
       "Shipped features and fixes for a 100K+ active user base, guided by real user feedback.",
-      "Maintained production stability on Git/GitLab CI/CD in Linux deployment environments while delivering new features.",
+      "Maintained production stability on AWS in Linux deployment environments while delivering new features.",
     ],
     metrics: [
       { value: "100K+", label: "active users" },
@@ -134,7 +138,7 @@ export const PROJECTS: Project[] = [
       "Rivaaj is a luxury clothing brand's e-commerce platform, where the storefront needed to feel as considered as the garments themselves — while the admin side needed to run a real retail operation underneath it.",
       "I built both halves: the customer-facing site and the internal admin panel, wiring payments and logistics into everyday order flows.",
     ],
-    stack: ["Next.js", "React.js", "Go", "REST APIs", "Admin Dashboard", "Responsive UI"],
+    stack: ["Next.js", "React.js", "Go", "REST APIs", "Admin Dashboard", "Responsive UI", "GitLab", "Figma", "Postman", "VS Code", "Docker", "Linux", "Production Release Management"],
     integrations: [
       { name: "Shiprocket", purpose: "Logistics & order delivery" },
       { name: "Razorpay", purpose: "Payment processing" },
@@ -168,7 +172,10 @@ export const PROJECTS: Project[] = [
     description: [
       "Cryptoforce is a crypto exchange platform where session time and trust directly translate into trading volume. My work centered on the trading-facing interfaces and the workflows that keep users oriented under fast-moving data.",
     ],
-    stack: ["Next.js", "React.js", "Material UI", "API Integration", "State Management", "GitLab CI/CD", "Linux"],
+    stack: [
+      "Next.js", "React.js", "Material UI", "API Integration", "State Management", "GitLab CI/CD", "Linux",
+      "Figma", "Postman", "VS Code",
+    ],
     contributions: [
       "Built and optimized the Cryptoforce web platform using React.js and Material UI.",
       "Developed responsive trading-related interfaces across devices.",
@@ -203,7 +210,7 @@ export const PROJECTS: Project[] = [
     description: [
       "PayOnRamp gives businesses a way to accept both crypto and fiat through a single gateway. I translated design specs directly into working product, screen by screen, in close collaboration with the client.",
     ],
-    stack: ["React.js", "Vue.js", "Node.js", "Figma", "GitLab", "Linux", "REST/API Integration"],
+    stack: ["React.js", "Vue.js", "Node.js", "Figma", "GitLab", "Linux", "REST/API Integration", "Postman", "VS Code"],
     contributions: [
       "Designed and implemented frontend interfaces based on client requirements.",
       "Converted Figma designs into responsive, production-ready interfaces.",
@@ -241,7 +248,10 @@ export const PROJECTS: Project[] = [
       "TerranovaInfra is a real-estate and land development company selling farmhouse and villa plots. I owned this project end to end — design, frontend, backend, admin tooling, and production delivery — with minimal external dependency.",
       "The centerpiece is an interactive plot map: a to-scale layout of the entire development where every plot is hoverable and shows live status — available, sold, or under mortgage — along with size, facing, and boundary measurements. It replaced static PDF layout sheets with something a buyer could actually explore.",
     ],
-    stack: ["Next.js", "React.js", "Go", "REST APIs", "Admin Panel", "Interactive Maps", "UI/UX"],
+    stack: [
+      "Next.js", "React.js", "Go", "REST APIs", "Admin Panel", "Interactive Maps", "UI/UX",
+      "GitLab", "Figma", "Postman", "VS Code", "Production Release Management", "Docker",
+    ],
     contributions: [
       "Designed the complete user experience and built the frontend architecture.",
       "Developed backend services in Go and integrated them with the frontend via REST APIs.",
